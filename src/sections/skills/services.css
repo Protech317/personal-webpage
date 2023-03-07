@@ -1,7 +1,7 @@
 .services__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem 3rem;
 }
 
 .card.service {
@@ -33,6 +33,7 @@
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
     .services__container {
+        grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
     }
 }

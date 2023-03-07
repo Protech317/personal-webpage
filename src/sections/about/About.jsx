@@ -1,43 +1,50 @@
-import AboutImage from '../../assets/about.jpg'
-import CV from '../../assets/cv.pdf'
-import {HiDownload} from 'react-icons/hi'
-import data from './data'
-import Card from '../../components/Card'
-import './about.css'
+import AboutImage from "../../assets/about.jpg";
+import CV from "../../assets/cv.pdf";
+import { HiDownload } from "react-icons/hi";
+import data from "./data";
+import Card from "../../components/Card";
+import "./about.css";
 
 const About = () => {
   return (
     <section id="about" data-aos="fade-in">
-        <div className="container about__container">
-            <div className="about__left">
-                <div className="about__portrait">
-                    <img src={AboutImage} alt="About Image" />
-                </div>
-            </div>
-            <div className="about__right">
-                <h2>About Me</h2>
-                <div className="about__cards">
-                    {
-                        data.map(item => (
-                            <Card key={item.id} className="about__card">
-                                <span className='about__card-icon'>{item.icon}</span>
-                                <h5>{item.title}</h5>
-                                <small>{item.desc}</small>
-                            </Card>
-                        ))
-                    }
-                </div>
-                <p>
-                Building projects my clients love have always been my passion. Being in the web development industry for over 3 years and serving more than 70 happy clients worldwide, I'm always motivated to do more!
-                </p>
-                <p>
-                Hi, my name is Hajia Bintu from Accra, Ghana. I'm a full-stack web developer with a Bachelors degree in Computer Science. My top priority is to get your business online the right way, giving you industry-standard design and all the functionality you need to operate smoothly online. Get in touch today with the details of your project let's get started! Check out my resume below!
-                </p>
-                <a href={CV} download className='btn primary'>Download CV <HiDownload/></a>
-            </div>
+      <h2 className="about_header">About Me</h2>
+      <div className="about__container">
+        <div className="about__cards">
+          {data.map((item) => (
+            <Card key={item.id} className="about__card">
+              <span className="about__card-icon">{item.icon}</span>
+              <a href={item.link}>
+                <h5>{item.title}</h5>
+              </a>
+              <small>{item.desc}</small>
+            </Card>
+          ))}
         </div>
+        <div className="about_footer">
+          <p>
+            Hi, my name is Bekzat Shamurzaev and i am experienced Front-End
+            Developer with 2+ years of expertise in HTML, CSS, JavaScript, React
+            and Redux. Passionate about staying up to date with web development
+            trends and collaborating with designers to deliver high-quality,
+            user-friendly sites and apps.
+          </p>
+          <p>
+            I received my MBA from Lincoln University, and have since worked for
+            Cargo Fleet as Front End Developer. In my free time, I enjoy
+            building webpages for small businesses and communities, which allow
+            me to stay up to date. If you're interested in working together or
+            just want to say hello, feel free to reach out to me at{" "}
+            <a href="#contact">Get In Touch</a>. Thanks for visiting my site,
+            and I look forward to connecting with you!
+          </p>
+          <a href={CV} download className="btn primary">
+            Download CV <HiDownload />
+          </a>
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

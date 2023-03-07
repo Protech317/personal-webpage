@@ -9,8 +9,10 @@ header {
 
 .header__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -23,15 +25,22 @@ header {
 }
 
 .header__container p {
-    width: 35rem;
+    width: 37rem;
     text-align: center;
     margin: 0.6rem 0 2rem;
+}
+.header_info_span {
+    display: block;
 }
 
 .header__cta {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1.2rem;
+}
+.header_info {
+    text-align: center;
 }
 
 .header__socials {
@@ -72,10 +81,15 @@ header {
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 600px) {
     .header__profile {
-        width: 14rem;
+        /* width: 14rem;
         height: 17rem;
         max-width: 60%;
-        max-height: 35vh;
+        max-height: 35vh; */
+        margin: 0px 10px 10px 30px;
+
+    }
+    .header_span{
+        display: none;
     }
 
     .header__container p {
