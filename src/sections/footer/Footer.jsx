@@ -12,18 +12,6 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className="footer__socials">
-          {socials.map((social) => (
-            <a
-              key={social.id}
-              href={social.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {social.icon}
-            </a>
-          ))}
-        </div>
       </div>
       <div className="footer__copyright">
         <small>2023 BEKZAT SHAMURZAEV &copy; All Rights Reserved</small>

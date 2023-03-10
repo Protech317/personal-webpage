@@ -22,6 +22,10 @@ const Header = () => {
           <h3 data-aos="fade-up" style={{ textAlign: "center" }}>
             Bekzat Shamurzaev
           </h3>
+          <p data-aos="fade-up" style={{ width: "300px" }}>
+            "Design is not just what it looks like and feels like. Design is how
+            it works." - Steve Jobs
+          </p>
         </div>
         <div className="header_info">
           <h3
@@ -57,18 +61,6 @@ const Header = () => {
             </a>
           </div>
         </div>
-        {/* <div className="header__socials">
-          {data.map((item) => (
-            <a
-              key={item.id}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div> */}
       </div>
     </header>
   );
