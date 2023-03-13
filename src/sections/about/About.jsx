@@ -1,4 +1,3 @@
-import AboutImage from "../../assets/about.jpg";
 import CV from "../../assets/cv.pdf";
 import { HiDownload } from "react-icons/hi";
 import data from "./data";
