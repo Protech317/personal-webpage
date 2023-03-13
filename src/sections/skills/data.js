@@ -11,14 +11,8 @@ import {
   SiJasmine,
   SiMailchimp,
 } from "react-icons/si";
-import { RiReactjsLine } from "react-icons/ri";
-import { FaServer, FaReact } from "react-icons/fa";
-import {
-  AiFillAppstore,
-  AiOutlineHtml5,
-  AiFillHeart,
-  AiFillGithub,
-} from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
+import { AiOutlineHtml5, AiFillHeart, AiFillGithub } from "react-icons/ai";
 import {
   DiJavascript,
   DiJavascript1,

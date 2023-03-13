@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import HeaderImage from "../../assets/header.jpg";
-import data from "./data";
 import CV from "../../assets/cv.pdf";
 import { HiDownload } from "react-icons/hi";
 import AOS from "aos";
